@@ -1,0 +1,19 @@
+; wso2 make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+projects[sealedair_wso2_store][version] = "" ; TODO add version
+projects[sealedair_wso2_store][subdir] = "custom"
+
+projects[sealedair_wso2_store_apps][version] = "" ; TODO add version
+projects[sealedair_wso2_store_apps][subdir] = "custom"
+
+projects[sealedair_wso2_user][version] = "" ; TODO add version
+projects[sealedair_wso2_user][subdir] = "custom"
+
